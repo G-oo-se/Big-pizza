@@ -1,4 +1,3 @@
-//------------------FILTER--------------------
 
 class Pizza {
     constructor(image, name, dough, diameter, priceS, priceM, priceL, meat, vegan, bbq, hot, calcone){
