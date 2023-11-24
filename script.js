@@ -94,7 +94,7 @@ let cart = {
                 </div>
             </div>
             <p class="cart__window-productPrice">${items[i].currentPrice}</p>
-            <img src="/assets/images/crestik.png" alt="" class="cart__window-productClearImg" onclick="clearCartProduct(this.parentElement)">
+            <img src="assets/images/crestik.png" alt="" class="cart__window-productClearImg" onclick="clearCartProduct(this.parentElement)">
         </div>`
         }
     },
