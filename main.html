@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/assets/images/logo.png" />
+    <title>BIG PIZZA</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="" class="logo__img">
+                <div class="logo__text">
+                    <h3 class="logo__textUpTitle">PIZZA</h3>
+                    <p class="logo__textBottomTitle">самая вкусная пицца во вселенной</p>
+                </div>
+            </div>
+            <div class="cart" onclick="toggleCart()">
+                <p class="cart__cost">0 ₽</p>
+                <img src="/assets/images/cartimg.png" alt="" class="cart__img">
+                <p class="cart__amount">0</p>
+            </div>
+            
+            <div class="cart__window">
+                <div class="cart__window-upTitle">
+                    <p class="cart__window-text">Корзина</p>
+                    <div class="cart__window-clear">
+                        <img src="/assets/images/cartClear.png" alt="" class="cart__window-img">
+                        <p class="cart__window-clearText" onclick="clearCart()">Очистить корзину</p>
+                    </div>
+                </div>
+                <div class="cart__window-products">
+                </div>
+                <div class="cart__window-bottomTitle">
+                    <p class="cart__window-bottomTitleAmount">Всего пицц: <span class="bottomAmountSpan" id="amount">0</span> шт.</p>
+                    <p class="cart__window-bottomTitlePrice">Сумма заказа: <span class="bottomPriceSpan" id="total">0 ₽</span></p>
+                </div>
+            </div>
+        
+        </header>
+        <main>
+            <div class="buttonFilter">
+                <div class="buttons">
+                    <h4 class="buttons__1 buttons__active" id="All">Все</h4>
+                    <h4 class="buttons__2" id="Meat">Мясные</h4>
+                    <h4 class="buttons__3" id="Vegan">Вегетарианская</h4>
+                    <h4 class="buttons__4" id="Grill">Гриль</h4>
+                    <h4 class="buttons__5" id="Hot">Острые</h4>
+                    <h4 class="buttons__6" id="Closed">Закрытые</h4>
+                </div>
+                <div class="filter">
+                    <img src="/assets/images/filterimg.png" alt="" class="filter__img">
+                    <h4 class="filter__select">Сортировка по:<span class="filter__select__1">популярности</span></h4>
+                    <div class="filter__burger">
+                        <h4 class="filter__burger__1">популярности</h4>
+                        <h4 class="filter__burger__2">по цене</h4>
+                        <h4 class="filter__burger__3">по алфавиту</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <h4 class="pizza__title">Все пиццы</h4>
+                <div class="pizza__cards">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
