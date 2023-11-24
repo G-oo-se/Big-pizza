@@ -35,7 +35,7 @@ class Pizza {
         <div class="cost">
             <h3 class="cost__text">${this.currentPrice} ₽</h3>
             <div class="cost__buttonToCart">
-                <img src="/assets/images/cost-toCart.png" alt="" class="cost__img">
+                <img src="assets/images/cost-toCart.png" alt="" class="cost__img">
                 <h3 class="cost__toCart">Добавить</h3>
             </div>
         </div>
