@@ -49,14 +49,14 @@ let menuItems = document.querySelector('.pizza__cards')
 console.log(menuItems)
 
 let menu = [
-    new Pizza('/assets/images/chizburger-pizza.png', 'Чизбургер-пицца', 'тонкое', 's', 395, 500, 700, true, false, true, false, false),
-    new Pizza('/assets/images/cheese-pizza.png', 'Сырная', 'тонкое', 's', 370, 500, 700, false, true, false, false, false),
-    new Pizza('/assets/images/crevetka-pizza.png', 'Креветки по-азиатски', 'тонкое', 's', 290, 500, 700, true, false, true, true, false),
-    new Pizza('/assets/images/cheesechicken-pizza.png', 'Сырный цыпленок', 'тонкое', 's', 385, 500, 700, true, false, false, false, false),
-    new Pizza('/assets/images/gribi.png', 'Овощи и грибы', 'тонкое', 's', 300, 500, 700, false, true, false, false, false),
-    new Pizza('/assets/images/pepperoni.png', 'Пеперонни', 'тонкое', 's', 390, 500, 700, true, false, false, false, false),
-    new Pizza('/assets/images/diablo.png', 'Диабло', 'тонкое', 's', 430, 500, 700, true, false, true, true, false),
-    new Pizza('/assets/images/margarita.png', 'Маргарита', 'тонкое', 's', 270, 500, 700, false, true, false, false, false)
+    new Pizza('assets/images/chizburger-pizza.png', 'Чизбургер-пицца', 'тонкое', 's', 395, 500, 700, true, false, true, false, false),
+    new Pizza('assets/images/cheese-pizza.png', 'Сырная', 'тонкое', 's', 370, 500, 700, false, true, false, false, false),
+    new Pizza('assets/images/crevetka-pizza.png', 'Креветки по-азиатски', 'тонкое', 's', 290, 500, 700, true, false, true, true, false),
+    new Pizza('assets/images/cheesechicken-pizza.png', 'Сырный цыпленок', 'тонкое', 's', 385, 500, 700, true, false, false, false, false),
+    new Pizza('assets/images/gribi.png', 'Овощи и грибы', 'тонкое', 's', 300, 500, 700, false, true, false, false, false),
+    new Pizza('assets/images/pepperoni.png', 'Пеперонни', 'тонкое', 's', 390, 500, 700, true, false, false, false, false),
+    new Pizza('assets/images/diablo.png', 'Диабло', 'тонкое', 's', 430, 500, 700, true, false, true, true, false),
+    new Pizza('assets/images/margarita.png', 'Маргарита', 'тонкое', 's', 270, 500, 700, false, true, false, false, false)
 ]
 for (i=0; i<menu.length; i++){
     menuItems.innerHTML +=  menu[i].display()
